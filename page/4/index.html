@@ -336,8 +336,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/26/jdbc/jdbc之Stament用法/" itemprop="url">
-                  Jdbc--Stament用法
+                <a class="post-title-link" href="/2016/11/26/jdbc/jdbc连接简单/" itemprop="url">
+                  Jdbc连接入门
                 </a>
               
             
@@ -361,8 +361,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/26/jdbc/jdbc之Stament用法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/jdbc/jdbc之Stament用法/" itemprop="commentsCount"></span>
+                <a href="/2016/11/26/jdbc/jdbc连接简单/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/jdbc/jdbc连接简单/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -372,7 +372,7 @@
 
         
 &nbsp; | &nbsp;
-<span id="/2016/11/26/jdbc/jdbc之Stament用法/"class="leancloud_visitors" data-flag-title="Jdbc--Stament用法">
+<span id="/2016/11/26/jdbc/jdbc连接简单/"class="leancloud_visitors" data-flag-title="Jdbc连接入门">
          &nbsp;阅读次数
         </span>
 
@@ -391,17 +391,12 @@
       
         
           
-          ++Stament++用法作用：用于执行静态SQL 语句并返回它所生成结果的对象。
-12int executeUpdate(String sql)
-执行给定SQL 语句，该语句可能为INSERT、UPDATE 或DELETE 语句，或
-者不返回任何内容的SQL 语句（如SQL DDL 语句）。
-12void close()
-立即释放此Statement 对象的数据库和JDBC 资源，而不是等待该对象自动关闭时发生此操作。
-1.使用DbUtil类来封装数据库的连接关闭操作123
+          jdbc连接数据库步骤：第一步：加载驱动：Class.forName()；第二步：连接数据库: Connection con=DriverManager.getConnection(url,uer,password);第三步：使用语句操作数据库；第四步：关闭数据库连接，释放资源:con.close().一般数据库操作语句都需要使用try，catch语句捕捉异常。
+123456789101112131415161718192021222324252627282930313233
           ...
 
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/26/jdbc/jdbc之Stament用法/#more" rel="contents">
+            <a class="btn" href="/2016/11/26/jdbc/jdbc连接简单/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -562,8 +557,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/26/jdbc/jdbc连接简单/" itemprop="url">
-                  Jdbc连接入门
+                <a class="post-title-link" href="/2016/11/26/jdbc/jdbc之Stament用法/" itemprop="url">
+                  Jdbc--Stament用法
                 </a>
               
             
@@ -587,8 +582,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/26/jdbc/jdbc连接简单/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/jdbc/jdbc连接简单/" itemprop="commentsCount"></span>
+                <a href="/2016/11/26/jdbc/jdbc之Stament用法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/jdbc/jdbc之Stament用法/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -598,7 +593,7 @@
 
         
 &nbsp; | &nbsp;
-<span id="/2016/11/26/jdbc/jdbc连接简单/"class="leancloud_visitors" data-flag-title="Jdbc连接入门">
+<span id="/2016/11/26/jdbc/jdbc之Stament用法/"class="leancloud_visitors" data-flag-title="Jdbc--Stament用法">
          &nbsp;阅读次数
         </span>
 
@@ -617,12 +612,17 @@
       
         
           
-          jdbc连接数据库步骤：第一步：加载驱动：Class.forName()；第二步：连接数据库: Connection con=DriverManager.getConnection(url,uer,password);第三步：使用语句操作数据库；第四步：关闭数据库连接，释放资源:con.close().一般数据库操作语句都需要使用try，catch语句捕捉异常。
-123456789101112131415161718192021222324252627282930313233
+          ++Stament++用法作用：用于执行静态SQL 语句并返回它所生成结果的对象。
+12int executeUpdate(String sql)
+执行给定SQL 语句，该语句可能为INSERT、UPDATE 或DELETE 语句，或
+者不返回任何内容的SQL 语句（如SQL DDL 语句）。
+12void close()
+立即释放此Statement 对象的数据库和JDBC 资源，而不是等待该对象自动关闭时发生此操作。
+1.使用DbUtil类来封装数据库的连接关闭操作123
           ...
 
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/26/jdbc/jdbc连接简单/#more" rel="contents">
+            <a class="btn" href="/2016/11/26/jdbc/jdbc之Stament用法/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1003,6 +1003,116 @@
             
               
                 
+                <a class="post-title-link" href="/2016/11/22/java/java自动装箱与自动拆箱/" itemprop="url">
+                  Java自动装箱与自动拆箱
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-22T00:00:00+08:00" content="2016-11-22">
+              2016-11-22
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/22/java/java自动装箱与自动拆箱/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/22/java/java自动装箱与自动拆箱/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        
+&nbsp; | &nbsp;
+<span id="/2016/11/22/java/java自动装箱与自动拆箱/"class="leancloud_visitors" data-flag-title="Java自动装箱与自动拆箱">
+         &nbsp;阅读次数
+        </span>
+
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          123456789101112131415161718192021package test;public class AutoBoxingUnboxing &#123;	public static void main(String []args) &#123;		//将基本类型转为包装类，称为自动装箱		Integer integer=5;		Object object=true;				int it=integer;		System.out.println(it);		if
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/22/java/java自动装箱与自动拆箱/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/11/22/java/字符串于基本类型地基本转换/" itemprop="url">
                   Java字符串与基本类型之间的转换
                 </a>
@@ -1068,116 +1178,6 @@
 
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/11/22/java/字符串于基本类型地基本转换/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/22/java/java自动装箱与自动拆箱/" itemprop="url">
-                  Java自动装箱与自动拆箱
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-22T00:00:00+08:00" content="2016-11-22">
-              2016-11-22
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/11/22/java/java自动装箱与自动拆箱/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/22/java/java自动装箱与自动拆箱/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        
-&nbsp; | &nbsp;
-<span id="/2016/11/22/java/java自动装箱与自动拆箱/"class="leancloud_visitors" data-flag-title="Java自动装箱与自动拆箱">
-         &nbsp;阅读次数
-        </span>
-
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          123456789101112131415161718192021package test;public class AutoBoxingUnboxing &#123;	public static void main(String []args) &#123;		//将基本类型转为包装类，称为自动装箱		Integer integer=5;		Object object=true;				int it=integer;		System.out.println(it);		if
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/22/java/java自动装箱与自动拆箱/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
