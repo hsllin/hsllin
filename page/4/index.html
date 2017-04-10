@@ -336,8 +336,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/26/jdbc/jdbc之Stament用法/" itemprop="url">
-                  Jdbc--Stament用法
+                <a class="post-title-link" href="/2016/11/26/jdbc/jdbc连接简单/" itemprop="url">
+                  Jdbc连接入门
                 </a>
               
             
@@ -361,8 +361,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/26/jdbc/jdbc之Stament用法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/jdbc/jdbc之Stament用法/" itemprop="commentsCount"></span>
+                <a href="/2016/11/26/jdbc/jdbc连接简单/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/jdbc/jdbc连接简单/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -372,7 +372,7 @@
 
         
 &nbsp; | &nbsp;
-<span id="/2016/11/26/jdbc/jdbc之Stament用法/"class="leancloud_visitors" data-flag-title="Jdbc--Stament用法">
+<span id="/2016/11/26/jdbc/jdbc连接简单/"class="leancloud_visitors" data-flag-title="Jdbc连接入门">
          &nbsp;阅读次数
         </span>
 
@@ -391,17 +391,12 @@
       
         
           
-          ++Stament++用法作用：用于执行静态SQL 语句并返回它所生成结果的对象。
-12int executeUpdate(String sql)
-执行给定SQL 语句，该语句可能为INSERT、UPDATE 或DELETE 语句，或
-者不返回任何内容的SQL 语句（如SQL DDL 语句）。
-12void close()
-立即释放此Statement 对象的数据库和JDBC 资源，而不是等待该对象自动关闭时发生此操作。
-1.使用DbUtil类来封装数据库的连接关闭操作123
+          jdbc连接数据库步骤：第一步：加载驱动：Class.forName()；第二步：连接数据库: Connection con=DriverManager.getConnection(url,uer,password);第三步：使用语句操作数据库；第四步：关闭数据库连接，释放资源:con.close().一般数据库操作语句都需要使用try，catch语句捕捉异常。
+123456789101112131415161718192021222324252627282930313233
           ...
 
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/26/jdbc/jdbc之Stament用法/#more" rel="contents">
+            <a class="btn" href="/2016/11/26/jdbc/jdbc连接简单/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -672,8 +667,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/26/jdbc/jdbc连接简单/" itemprop="url">
-                  Jdbc连接入门
+                <a class="post-title-link" href="/2016/11/26/jdbc/jdbc之Stament用法/" itemprop="url">
+                  Jdbc--Stament用法
                 </a>
               
             
@@ -697,8 +692,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/26/jdbc/jdbc连接简单/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/jdbc/jdbc连接简单/" itemprop="commentsCount"></span>
+                <a href="/2016/11/26/jdbc/jdbc之Stament用法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/jdbc/jdbc之Stament用法/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -708,7 +703,7 @@
 
         
 &nbsp; | &nbsp;
-<span id="/2016/11/26/jdbc/jdbc连接简单/"class="leancloud_visitors" data-flag-title="Jdbc连接入门">
+<span id="/2016/11/26/jdbc/jdbc之Stament用法/"class="leancloud_visitors" data-flag-title="Jdbc--Stament用法">
          &nbsp;阅读次数
         </span>
 
@@ -727,12 +722,17 @@
       
         
           
-          jdbc连接数据库步骤：第一步：加载驱动：Class.forName()；第二步：连接数据库: Connection con=DriverManager.getConnection(url,uer,password);第三步：使用语句操作数据库；第四步：关闭数据库连接，释放资源:con.close().一般数据库操作语句都需要使用try，catch语句捕捉异常。
-123456789101112131415161718192021222324252627282930313233
+          ++Stament++用法作用：用于执行静态SQL 语句并返回它所生成结果的对象。
+12int executeUpdate(String sql)
+执行给定SQL 语句，该语句可能为INSERT、UPDATE 或DELETE 语句，或
+者不返回任何内容的SQL 语句（如SQL DDL 语句）。
+12void close()
+立即释放此Statement 对象的数据库和JDBC 资源，而不是等待该对象自动关闭时发生此操作。
+1.使用DbUtil类来封装数据库的连接关闭操作123
           ...
 
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/26/jdbc/jdbc连接简单/#more" rel="contents">
+            <a class="btn" href="/2016/11/26/jdbc/jdbc之Stament用法/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
